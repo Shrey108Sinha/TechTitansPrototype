@@ -15,7 +15,7 @@ const HomeUser = ({username}) =>{
         <Link to="/Home/PurchasePolicies">Purchase Policies</Link>
         <Link to="/Home/ViewActivePolicies">View Active Policies</Link>
         <Link to="/Home/CancelPolicy">Cancel Policy</Link>
-        <Link to="/Home/GreivanceRedressal">Grievance Redressal</Link>
+        <Link to="/Home/GrievanceRedressal">Grievance Redressal</Link>
     </nav>
 
     <div class="container">
