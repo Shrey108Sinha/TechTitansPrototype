@@ -3,6 +3,8 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import HomeUser from "./HomeUser";
+import CancelPolicy from "./CancelPolicy";
+
 
 const App = () =>{
   const [username, setUsername] = useState("");
@@ -18,6 +20,7 @@ const App = () =>{
         <Route path = "/SignIn" element = {<SignIn setUsername = {setUsername} setPassword = {setPassword} setphoneNo = {setphoneNo} setEmailId = {setEmailId} setCompanyName = {setCompanyName} setPanNum = {setPanNum}/>} />
         <Route path = "/SignUp" element = {<SignUp/>} />
         <Route path = "/Home" element = {((username !== "") && (companyName === ""))? <HomeUser username = {username}/> : null}/>
+        <Route path = "/Home/CancelPolicy" element = {<CancelPolicy panNum = {panNum}/>}/> 
       </Routes>
     </div>
    </Router>

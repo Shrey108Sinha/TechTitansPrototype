@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-//import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "../styles/HomeUser.css";
 
 const HomeUser = ({username}) =>{
@@ -11,11 +11,11 @@ const HomeUser = ({username}) =>{
     </header>
 
     <nav>
-        <a href="/Home/BrowsePolicies" target="_blank">Browse Policies</a>
-        <a href="/Home/PurchasePolicies" target="_blank">Purchase Policies</a>
-        <a href="/Home/ViewActivePolicies" target="_blank">View Active Policies</a>
-        <a href="/Home/CancelPolicy" target="_blank">Cancel Policy</a>
-        <a href="/Home/GreivanceRedressal" target="_blank">Grievance Redressal</a>
+        <Link to="/Home/BrowsePolicies" >Browse Policies</Link>
+        <Link to="/Home/PurchasePolicies">Purchase Policies</Link>
+        <Link to="/Home/ViewActivePolicies">View Active Policies</Link>
+        <Link to="/Home/CancelPolicy">Cancel Policy</Link>
+        <Link to="/Home/GreivanceRedressal">Grievance Redressal</Link>
     </nav>
 
     <div class="container">
