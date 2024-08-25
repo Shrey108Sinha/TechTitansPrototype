@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import HomeUser from "./HomeUser";
+import HomeCommerce from "./HomeCommerce";
 import CancelPolicy from "./CancelPolicy";
 import GrievanceRedressal from "./GrievanceRedressal";
 
@@ -20,7 +21,7 @@ const App = () =>{
       <Routes>
         <Route path = "/SignIn" element = {<SignIn setUsername = {setUsername} setPassword = {setPassword} setphoneNo = {setphoneNo} setEmailId = {setEmailId} setCompanyName = {setCompanyName} setPanNum = {setPanNum}/>} />
         <Route path = "/SignUp" element = {<SignUp/>} />
-        <Route path = "/Home" element = {((username !== "") && (companyName === ""))? <HomeUser username = {username}/> : null}/>
+        <Route path = "/Home" element = {((username !== "") && (companyName === ""))? <HomeUser username = {username}/> : <HomeCommerce username = {username} companyName = {companyName}/>}/>
         <Route path = "/Home/CancelPolicy" element = {((username !== "") && (companyName === ""))? <CancelPolicy panNum = {panNum}/> : null}/> 
         <Route path = "/Home/GrievanceRedressal" element = {((username !== "") && (companyName === ""))? <GrievanceRedressal panNum = {panNum}/> : null}/>
       </Routes>
