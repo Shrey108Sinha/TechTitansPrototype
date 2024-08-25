@@ -21,7 +21,7 @@ const SignIn = ({setUsername, setPassword, setphoneNo, setEmailId, setCompanyNam
          const pswrd = "pswrd";
          const phNum = "0000000000";
          const email = "abc@abc.com";
-         const compName = "abc industries";
+         const compName = "";
          const panNum = "THDON0479W";
          if(username === usn && pswrd === password)
         {
