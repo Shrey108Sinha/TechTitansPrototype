@@ -9,8 +9,11 @@ import GrievanceRedressal from "./GrievanceRedressal";
 import PurchasePolicy from "./PurchasePolicy";
 import BrowsePolicies from "./BrowsePolicies";
 import ViewActivePoliciesUser from './ViewActivePoliciesUser';
+import ViewActivePoliciesCommerce from './ViewActivePoliciesCommerce';
 import NewPolicy from "./NewPolicy"
 import CustomerDetails from './CustomerDetails';
+import ApplyLicense from './ApplyLicense';
+import CustomerGrievances from './CustomerGrievances';
 
 
 
@@ -27,14 +30,16 @@ const App = () =>{
       <Routes>
         <Route path = "/SignIn" element = {<SignIn setUsername = {setUsername} setPassword = {setPassword} setphoneNo = {setphoneNo} setEmailId = {setEmailId} setCompanyName = {setCompanyName} setPanNum = {setPanNum}/>} />
         <Route path = "/SignUp" element = {<SignUp/>} />
-        <Route path = "/Home" element = {((username !== "") && (companyName === ""))? <HomeUser username = {username}/> : <HomeCommerce username = {username} companyName = {companyName}/>}/>
+        <Route path = "/Home" element = {((username !== "") && (companyName === ""))? <HomeUser username = {username}/> : (username && <HomeCommerce username = {username} companyName = {companyName}/>)}/>
         <Route path = "/Home/BrowsePolicies" element = {((username !== "") && (companyName === ""))? <BrowsePolicies/> : null}/>
-        <Route path = "/Home/ViewActivePolicies" element = {((username !== "") && (companyName === ""))? <ViewActivePoliciesUser/> : null}/>
+        <Route path = "/Home/ViewActivePolicies" element = {((username !== "") && (companyName === ""))? <ViewActivePoliciesUser/> : (username && <ViewActivePoliciesCommerce/>)}/>
         <Route path = "/Home/CancelPolicy" element = {((username !== "") && (companyName === ""))? <CancelPolicy panNum = {panNum}/> : null}/> 
         <Route path = "/Home/PurchasePolicies" element = {((username !== "") && (companyName === ""))? <PurchasePolicy/> : null}/> 
         <Route path = "/Home/GrievanceRedressal" element = {((username !== "") && (companyName === ""))? <GrievanceRedressal panNum = {panNum}/> : null}/>
         <Route path = "/Home/DeployNewPolicy" element = {((username !== "") && (companyName !== ""))? <NewPolicy/> : null}/>
         <Route path = "/Home/ViewCustomerDetails" element = {((username !== "") && (companyName !== ""))? <CustomerDetails/> : null}/>
+        <Route path = "/Home/ApplyLicense" element = {((username !== "") && (companyName !== ""))? <ApplyLicense/> : null}/>
+        <Route path = "/Home/CustomerGrievances" element = {((username !== "") && (companyName !== ""))? <CustomerGrievances/> : null}/>
       </Routes>
     </div>
    </Router>
