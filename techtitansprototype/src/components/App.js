@@ -6,6 +6,9 @@ import HomeUser from "./HomeUser";
 import HomeCommerce from "./HomeCommerce";
 import CancelPolicy from "./CancelPolicy";
 import GrievanceRedressal from "./GrievanceRedressal";
+import PurchasePolicy from "./PurchasePolicy";
+import BrowsePolicies from "./BrowsePolicies";
+import ViewActivePoliciesUser from './ViewActivePoliciesUser';
 
 
 const App = () =>{
@@ -22,7 +25,10 @@ const App = () =>{
         <Route path = "/SignIn" element = {<SignIn setUsername = {setUsername} setPassword = {setPassword} setphoneNo = {setphoneNo} setEmailId = {setEmailId} setCompanyName = {setCompanyName} setPanNum = {setPanNum}/>} />
         <Route path = "/SignUp" element = {<SignUp/>} />
         <Route path = "/Home" element = {((username !== "") && (companyName === ""))? <HomeUser username = {username}/> : <HomeCommerce username = {username} companyName = {companyName}/>}/>
+        <Route path = "/Home/BrowsePolicies" element = {((username !== "") && (companyName === ""))? <BrowsePolicies/> : null}/>
+        <Route path = "/Home/ViewActivePolicies" element = {((username !== "") && (companyName === ""))? <ViewActivePoliciesUser/> : null}/>
         <Route path = "/Home/CancelPolicy" element = {((username !== "") && (companyName === ""))? <CancelPolicy panNum = {panNum}/> : null}/> 
+        <Route path = "/Home/PurchasePolicies" element = {((username !== "") && (companyName === ""))? <PurchasePolicy/> : null}/> 
         <Route path = "/Home/GrievanceRedressal" element = {((username !== "") && (companyName === ""))? <GrievanceRedressal panNum = {panNum}/> : null}/>
       </Routes>
     </div>
