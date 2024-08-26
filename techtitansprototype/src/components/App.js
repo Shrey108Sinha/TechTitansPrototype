@@ -9,6 +9,9 @@ import GrievanceRedressal from "./GrievanceRedressal";
 import PurchasePolicy from "./PurchasePolicy";
 import BrowsePolicies from "./BrowsePolicies";
 import ViewActivePoliciesUser from './ViewActivePoliciesUser';
+import NewPolicy from "./NewPolicy"
+import CustomerDetails from './CustomerDetails';
+
 
 
 const App = () =>{
@@ -30,6 +33,8 @@ const App = () =>{
         <Route path = "/Home/CancelPolicy" element = {((username !== "") && (companyName === ""))? <CancelPolicy panNum = {panNum}/> : null}/> 
         <Route path = "/Home/PurchasePolicies" element = {((username !== "") && (companyName === ""))? <PurchasePolicy/> : null}/> 
         <Route path = "/Home/GrievanceRedressal" element = {((username !== "") && (companyName === ""))? <GrievanceRedressal panNum = {panNum}/> : null}/>
+        <Route path = "/Home/DeployNewPolicy" element = {((username !== "") && (companyName !== ""))? <NewPolicy/> : null}/>
+        <Route path = "/Home/ViewCustomerDetails" element = {((username !== "") && (companyName !== ""))? <CustomerDetails/> : null}/>
       </Routes>
     </div>
    </Router>
