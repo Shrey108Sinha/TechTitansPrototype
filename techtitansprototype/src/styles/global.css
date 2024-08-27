@@ -1,0 +1,143 @@
+button {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: maroon;
+    color: blanchedalmond;
+}
+
+button:hover{
+    border-radius: 20px;
+}
+
+
+
+
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Full width */
+    max-width: 300px; /* Max width for the menu */
+    background-color: burlywood;/* Background color */
+    border: 1px solid blanchedalmond; /* Border around the menu */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    
+    justify-content: center;
+    align-items: center;
+}
+
+ li {
+    padding: 10px; /* Padding inside each item */
+    border-bottom: 1px solid blanchedalmond; /* Separator between items */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+li:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+    color: #333; /* Change text color on hover */
+}
+
+li:active {
+    background-color: #e0e0e0; /* Background when clicked */
+    color: #000; /* Text color when clicked */
+}
+
+
+.myDiv{
+    background-color:lightgoldenrodyellow;
+    color:maroon;
+    border-radius: 15%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:2px solid maroon;
+    width:400px;
+    font-size :18px;
+    text-align:center;
+    
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: blanchedalmond;
+    margin: 20px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
+    background-image: url('./MyBckgrnd1.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    background-color: maroon;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    background-color: maroon;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    color: blanchedalmond;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.container {
+    padding: 20px;
+}
+.section {
+    background-color: blanchedalmond;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: maroon;
+}
+footer {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+input{
+    height: 30px;
+    width: 300 px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: maroon;
+    color: blanchedalmond;
+    border-radius: 20px;
+    margin: 10px 10px 10px 10px;
+}
+
+textarea{
+    height: 100px;
+    width: 350 px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: maroon;
+    color: blanchedalmond;
+    border-radius: 20px;
+    margin: 10px 10px 10px 10px;
+}

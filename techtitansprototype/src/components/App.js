@@ -14,6 +14,7 @@ import NewPolicy from "./NewPolicy"
 import CustomerDetails from './CustomerDetails';
 import ApplyLicense from './ApplyLicense';
 import CustomerGrievances from './CustomerGrievances';
+import "../styles/global.css"
 
 
 

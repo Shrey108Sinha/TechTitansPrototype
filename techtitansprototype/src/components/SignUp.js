@@ -56,7 +56,7 @@ const SignUp = () =>{
 
       const shouldDispClear = (username.length > 0 || email.length > 0 || phNum.length > 0 || password.length > 0 || companyName.length > 0 || panNum.length > 0);
     return(
-        <div>
+        <div class = "myDiv">
             <h1 align = "center">
               Sign-Up</h1>
             <hr />

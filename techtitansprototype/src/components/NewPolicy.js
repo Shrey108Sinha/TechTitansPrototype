@@ -12,11 +12,10 @@ const NewPolicy = ()=>{
         navigate("/Home");
     }
     return(
-        <div ailign = "center">
-            <header class="logo-container">
+        <div ailign = "center" class = "myDiv">
+            
             <p class="tagline"><h3 id="unique-heading">Create a New Policy</h3></p>
-
-          </header>
+        <hr/><br/>
        
         <br/>
         <form onSubmit = {handleSubmit} align = "center">

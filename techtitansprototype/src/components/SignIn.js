@@ -37,7 +37,7 @@ const SignIn = ({setUsername, setPassword, setphoneNo, setEmailId, setCompanyNam
         
     };
     return(
-        <div>
+        <div class = "myDiv">
             <h1 align = "center">
               Sign-In</h1>
             <hr />
@@ -52,7 +52,7 @@ const SignIn = ({setUsername, setPassword, setphoneNo, setEmailId, setCompanyNam
           <input type="password" className="inputBox" value={password} onChange={(e) => setPasswordCol(e.target.value)} maxLength={20} minLength={3} required autoComplete="off" />
           <br></br><br></br>
                     <button type="submit" className="buttons" >Sign-In</button>
-                    {shouldDispClear && <div><br></br><br></br><button onClick={clrscr} className="buttons" >Clear</button></div>}
+                    {shouldDispClear && <span><br></br><br></br><button onClick={clrscr} className="buttons" >Clear</button></span>}
       </form>
       </h2><br></br>
             <p align="center">Don't have an account? <form onSubmit = {goSignUp}><button type = "submit">Create an account</button></form></p>

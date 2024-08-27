@@ -24,11 +24,12 @@ const  CustomerDetails = () =>{
     }
     const shouldDispClear = searchValue.length > 0
     return(
+        <div class = "myDiv">
         <p align = "center">
-            <header class="logo-container">
+            
     <p class="tagline"><h3 id="unique-heading">Your Customers</h3></p>
-        
-    </header><br/><br/>
+    <hr/> 
+    <br/><br/>
             <input tpye="text" value= {searchValue} onChange = {handleChange}/>
         <br></br><br></br>
         <button onClick={(e)=>{e.preventDefault();navigate("/Home")}}>Home</button><br/><br/>
@@ -38,7 +39,7 @@ const  CustomerDetails = () =>{
             products.map(checkSub)
         }
         </ul>
-        </p>
+        </p> </div>
     );
 
 }

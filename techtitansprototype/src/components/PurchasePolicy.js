@@ -19,11 +19,13 @@ const PurchasePolicy = ()=>{
         
     </header>
     <div class="container">
+        <div id="browse-policies" class="section">
         <h1>Purchase Policy</h1>
 
         <h2>Policy Details</h2>
         <p>Our health insurance policies provide a comprehensive coverage for a wide range of medical expenses. From hospitalization costs to preventive care, we've got you covered.</p>
-
+        </div>
+        <div id="browse-policies" class="section">
         <h2>Benefits</h2>
         <ul>
             <li>Cashless hospitalization at all network hospitals</li>
@@ -32,7 +34,8 @@ const PurchasePolicy = ()=>{
             <li>No-claim bonus for claim-free years</li>
             <li>Flexible sum insured options</li>
         </ul>
-
+        </div>
+        <div id="browse-policies" class="section">
         <h2>General Terms and Conditions</h2>
         <p>Please read the following terms and conditions carefully before purchasing the policy:</p>
         <ul>
@@ -42,7 +45,8 @@ const PurchasePolicy = ()=>{
             <li>Policy renewal is required annually to maintain coverage.</li>
             <li>Any fraudulent claims will result in the termination of the policy.</li>
         </ul>
-
+        </div>
+        <div id="browse-policies" class="section">
         <h2>Get Your Policy Now!</h2>
         <p>Ready to secure your health? Scroll below to proceed with the purchase!</p>
         <br/><br/>
@@ -68,6 +72,7 @@ const PurchasePolicy = ()=>{
         <button type = "submit">Purchase</button>
         <h3>NOTE: All other necessary details will be taken from your account info.</h3>
         </form>
+        </div>
     </div>
 
     </div>

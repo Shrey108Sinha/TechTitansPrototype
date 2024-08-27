@@ -11,10 +11,11 @@ const ApplyLicense = ()=>{
         navigate("/Home");
     }
     return(
-        <div align = "center">
+        <div align = "center" class = "myDiv">
             <br/>
         
         <h2>Apply for License for a Policy</h2>
+        <hr/><br/>
         Policy Number
         <br/>
         <form onSubmit = {handleSubmit}>

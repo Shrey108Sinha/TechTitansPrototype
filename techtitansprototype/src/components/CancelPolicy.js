@@ -13,10 +13,11 @@ const CancelPolicy = ({panNum})=>{
         navigate("/Home");
     }
     return (
-        <div align = "center">
+        <div align = "center" class = "myDiv">
         <br/>
         
         <h2>Cancel Policy</h2>
+        <hr/><br/>
         Policy Number
         <br/>
         <form onSubmit = {handleSubmit}>

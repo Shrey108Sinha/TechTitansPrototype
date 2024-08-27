@@ -15,10 +15,11 @@ const GrievanceRedressal = ({panNum})=>{
     }
     return(
         
-        <div align = "center">
+        <div align = "center" class = "myDiv">
         <br/>
         
         <h2>Raise a complaint</h2>
+        <hr></hr><br/>
         Policy Number
         <br/>
         <form onSubmit = {handleSubmit}>

@@ -28,21 +28,21 @@ const  BrowsePolicies = () =>{
     }
     const shouldDispClear = searchValue.length > 0
     return(
-        <p align = "center">
-            <header class="logo-container">
+       <div class = "myDiv"> <p align = "center">
+            
     <p class="tagline"><h3 id="unique-heading">Browse Policies</h3></p>
-        
-    </header><br/><br/>
+    <hr></hr>
+    <br/><br/>
             <input tpye="text" value= {searchValue} onChange = {handleChange}/>
         <br></br><br></br>
         <button onClick={(e)=>{e.preventDefault();navigate("/Home")}}>Home</button><br/><br/>
         {shouldDispClear && <button onClick = {clrscr}>Clear</button>}
-        <ul>
+        <ul align = "center">
         {
             products.map(checkSub)
         }
         </ul>
-        </p>
+        </p> </div>
     );
 
 }
