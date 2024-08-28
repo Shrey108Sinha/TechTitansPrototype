@@ -17,23 +17,36 @@ const SignIn = ({setUsername, setPassword, setphoneNo, setEmailId, setCompanyNam
       
     const handleSignIn = (e) => {
         e.preventDefault();
-         const usn = "User1";
+         const usn1 = "User1";
+         const usn2 = "User2";
          const pswrd = "pswrd";
          const phNum = "0000000000";
          const email = "abc@abc.com";
-         const compName = "";
+         const compName1 = "NewLife Inc.";
+         const compName2 = "";
          const panNum = "THDON0479W";
-         if(username === usn && pswrd === password)
+         if(username === usn1 && pswrd === password)
         {
             alert("Signed in successfully");
             setUsername(username);
             setPassword(password);
             setphoneNo(phNum);
             setEmailId(email);
-            setCompanyName(compName);
+            setCompanyName(compName1);
             setPanNum(panNum);
             navigate("/Home");
         } 
+        else if(username === usn2 && pswrd === password)
+        {
+            alert("Signed in successfully");
+            setUsername(username);
+            setPassword(password);
+            setphoneNo(phNum);
+            setEmailId(email);
+            setCompanyName(compName2);
+            setPanNum(panNum);
+            navigate("/Home");
+        }
         
     };
     return(
